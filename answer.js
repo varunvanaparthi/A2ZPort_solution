@@ -2,7 +2,7 @@ function findTheLongestWord(sentence) {
     // Filter out non-alphabetical characters and split the sentence into words
     const words = sentence.replace(/[^a-z\s]/gi, '').split(" ");
     
-    // Helper function to count vowels in a word
+    // Function to count vowels in a word
     const countVowels = (word) => {
         return Array.from(word).reduce((vow, char) => {
             if ('AEIOUaeiou'.includes(char)) {
